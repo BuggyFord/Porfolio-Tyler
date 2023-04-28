@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #a1c3ff;
+}
+
+img{
+    max-width: 100%;
+}
+
+#mainimage{
+    height: 33%;
+    width: 33%;
+}
+
+#Aboutimage{
+    height: 100%;
+    width: 100px;%;
+}
+h1,h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{  color: rgb(252, 171, 20);
+    text-decoration: none;
+}
+
+ a:hover {
+        color: rgb(6, 241, 143);
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30;
+}
+
+
+
+.navbar{
+    background-color: #5173adaf;
+    color: white;
+    height: 60px;
+}
+
+
+
+.navbar a { 
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.navbar a:hover{
+    color: lightblue;
+}
+.navbar .container{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+
+.header{
+    background-image:url("../bryceTyler.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+    /*background-color: #0a56c8;*/
+    color: #0a51cc;
+    text-shadow: 1px 2px rgba(206, 149, 3, 0.851);
+    min-height: 85vh;
+
+    
+    
+}
+
+.header h1{
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boxHome a {
+    display: block;
+}
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+.boxHome, .boxAbout, .boxContact{ 
+    flex: 1;
+    background-color: #0a51cc;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px black;
+    padding: 15px 20px;
+
+}
+.boxHome{
+    /* background-image: url("../bowtie-cat.png"); */
+    background-repeat: no-repeat;
+    background-size: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.boxHome, h1 { 
+    text-align: center;
+
+}
+.boxAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 265px;
+    
+}   
+.boxContact{
+    background-image: url("../jeanjacket.jpeg");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    height:200px;
+}
+
+.box i{
+    margin-right: 10px;
+}
+
+.boxes .container{
+    display: block;
+    text-align: center;
+}
+
+    
+.footer{
+    background-image: url("../picointhesunset.jpeg");
+    background-repeat: no-repeat;
+    min-height: 300px;
+    object-position: center;
+    background-position: center;
+    color: white;
+    background-color:#5173adaf;
+}
+.footer, p{
+    text-align: center;
+}
+@media(max-width: 768px) {
+    .header .container{
+
+        flex-direction: column;
+        padding-top: 20px;
+
+        text-align: center;
+
+    }
+}   
+@media(max-width: 700px) {
+    .boxHome{
+        background-image: url("../lookatdruid.jpeg");
+        
+    }
+}
+    
+@media(max-width:700px){
+    .boxAbout{
+        background-image: url("../goblinking.jpeg");
+        
+    }
+}
+
+@media(max-width:700px) {
+    .boxContact{
+        background-image: url("../marquettecolors.jpeg");
+    }
+}
+@media (max-width: 768px) {
+    .header{
+        min-height: 60vh;
+    }
+    
+}
+@media (max-width:1080px){
+    .header{
+        min-height: 70vh;
+    }
+
+}
